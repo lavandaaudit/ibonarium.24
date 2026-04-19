@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITDECK | IBONARIUM 24</title>
+    <link rel="stylesheet" href="styles_24.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-overlay"></div>
+    <div class="grid-container">
+        
+        <!-- Header -->
+        <header class="dashboard-header box">
+            <div class="header-left">
+                <h1>SITDECK GLOBAL SITUATION BRIEFING</h1>
+                <div class="sys-info">
+                    <span id="current-date">-- -- ----</span> | <span id="current-utc">--:-- UTC</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="status-indicator">
+                    <div class="pulse-dot"></div>
+                    <span>СИСТЕМА АКТИВНА</span>
+                </div>
+                <div class="logo">IBONARIUM 24</div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="dashboard-main">
+            <!-- Left Column -->
+            <div class="col-left">
+                <section class="box bluf-sect">
+                    <div class="box-header">
+                        <h2>[ BLUF ] ОСНОВНА СУТЬ</h2>
+                    </div>
+                    <div class="box-content" id="bluf-content">
+                        <div class="loading">Отримання ключових розвідданих...</div>
+                    </div>
+                </section>
+
+                <section class="box key-dev-sect">
+                    <div class="box-header">
+                        <h2>[ КЛЮЧОВІ ПОДІЇ ]</h2>
+                    </div>
+                    <div class="box-content" id="key-dev-content">
+                         <div class="loading">Синхронізація глобальних інцидентів...</div>
+                    </div>
+                </section>
+
+                <section class="box indicators-sect">
+                    <div class="box-header">
+                        <h2>[ ІНДИКАТОРИ ДЛЯ ДОГЛЯДУ ] 24-48 ГОД.</h2>
+                    </div>
+                    <div class="box-content" id="indicators-content">
+                        <div class="loading">Аналіз ймовірнісних моделей...</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-right">
+                <section class="box regions-sect">
+                    <div class="box-header">
+                        <h2>[ РЕГІОНАЛЬНІ ОГЛЯДИ ]</h2>
+                    </div>
+                    <div class="box-content region-grid" id="regions-content">
+                        <div class="region-box" id="region-me">
+                            <h3>БЛИЗЬКИЙ СХІД</h3>
+                            <ul class="region-list"></ul>
+                        </div>
+                        <div class="region-box" id="region-eu">
+                            <h3>ЄВРОПА</h3>
+                            <ul class="region-list"></ul>
+                        </div>
+                        <div class="region-box" id="region-ap">
+                            <h3>АЗІЙСЬКО-ТИХООКЕАНСЬКИЙ</h3>
+                            <ul class="region-list"></ul>
+                        </div>
+                        <div class="region-box" id="region-am">
+                            <h3>АМЕРИКА ТА АФРИКА</h3>
+                            <ul class="region-list"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="box market-sect">
+                    <div class="box-header">
+                        <h2>[ РИНКОВІ НАСЛІДКИ ]</h2>
+                    </div>
+                    <div class="box-content" style="padding:0;">
+                        <table class="market-table">
+                            <thead>
+                                <tr>
+                                    <th>АКТИВ</th>
+                                    <th>СИГНАЛ</th>
+                                    <th>ОЦІНКА</th>
+                                    <th>ТРЕНД</th>
+                                </tr>
+                            </thead>
+                            <tbody id="market-tbody">
+                                <tr>
+                                    <td colspan="4" class="loading">Підключення до торгових вузлів...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="box threats-sect">
+                    <div class="box-header">
+                        <h2>[ КРИТИЧНІ ПОДІЇ ] ПРИРОДНІ КАТАКЛІЗМИ</h2>
+                    </div>
+                    <div class="box-content" id="threats-content">
+                        <ul class="region-list">
+                            <li class="loading" style="color:var(--text-secondary)">Сканування сейсмічної активності...</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box cyber-sect">
+                    <div class="box-header">
+                        <h2>[ КІБЕРБЕЗПЕКА ] ВАЖЛИВІ ІНЦИДЕНТИ</h2>
+                    </div>
+                    <div class="box-content" id="cyber-content">
+                        <ul class="region-list">
+                            <li class="loading" style="color:var(--text-secondary)">Сканування кіберпростору...</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box space-sect">
+                    <div class="box-header">
+                        <h2>[ АЕРОКОСМІЧНА ЗОНА ] СТАТУС ОРБІТИ</h2>
+                    </div>
+                    <div class="box-content" id="space-content">
+                        <ul class="region-list">
+                            <li class="loading" style="color:var(--text-secondary)">Прийом телеметрії...</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box multimedia-sect">
+                    <div class="box-header">
+                        <h2>[ МУЛЬТИМЕДІА ДНЯ ]</h2>
+                    </div>
+                    <div class="box-content multimedia-content" id="multimedia-content">
+                        <div class="loading">Отримання медіафайлів...</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="parser_24.js"></script>
+</body>
+</html>
